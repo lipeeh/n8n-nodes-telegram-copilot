@@ -461,6 +461,44 @@ default: '0',
 	description:
 	'Identifier of the message starting from which history must be fetched; use 0 to get results from the last message',
 };
+export const variable_offset: INodeProperties = {
+	displayName: 'Offset',
+	name: 'offset',
+	required: true,
+	type: 'number',
+	typeOptions: {
+		maxValue: 0,
+		minValue: -99,
+	},
+	default: 0,
+	displayOptions: {
+	show: {
+		operation: ['getChatHistory'],
+			resource: ['chat'],
+		},
+	},
+	placeholder: '0',
+	description:
+	'Use 0 to start from the exact from_message_id, or use a negative value (up to -99) to include newer messages',
+};
+export const variable_limit: INodeProperties = {
+	displayName: 'Limit',
+	name: 'limit',
+	required: true,
+	type: 'number',
+	typeOptions: {
+		minValue: 1,
+	},
+	default: 50,
+	displayOptions: {
+		show: {
+			operation: ['getChatHistory'],
+			resource: ['chat'],
+		},
+	},
+	placeholder: '50',
+	description: 'Max number of results to return',
+};
 export const variable_message_ids: INodeProperties = {
 	displayName: 'Message IDs',
 		name: 'message_ids',
