@@ -1,6 +1,6 @@
 # n8n-nodes-telepilot
 
-[![npm version](https://badge.fury.io/js/@telepilotco%2Fn8n-nodes-telepilot.svg)](https://www.npmjs.com/package/@telepilotco/n8n-nodes-telepilot)
+[![npm version](https://badge.fury.io/js/@unclescrooge%2Fn8n-nodes-telepilot.svg)](https://www.npmjs.com/package/@unclescrooge/n8n-nodes-telepilot)
 
 ## Beta testing
 
@@ -27,11 +27,11 @@ If you are interested in following our updates and news, check out:
 
 ## Overview
 
-`@telepilotco/n8n-nodes-telepilot` is a node for the n8n automation engine that provides the ability to configure your personal Telegram assistant. 
+`@unclescrooge/n8n-nodes-telepilot` is a node for the n8n automation engine that provides the ability to configure your personal Telegram assistant. 
 It works alongside your main client, allowing you to interact with Telegram servers and see all the messages you can see, 
 while also enabling your assistant to react to those messages.
 
-With `@telepilotco/n8n-nodes-telepilot`, you can enhance your Telegram user experience by automating various actions and responses. 
+With `@unclescrooge/n8n-nodes-telepilot`, you can enhance your Telegram user experience by automating various actions and responses. 
 Your personal Telegram CoPilot acts as real-time assistant, providing additional functionalities and making your Telegram usage more efficient.
 
 At [TelePilot](https://telepilot.co), we prioritize your privacy. We do not have access to your Telegram messages because you have full control over your personal instance of TelePilot, 
@@ -74,7 +74,7 @@ To use this package in your n8n project, follow these steps:
 
 1. Go to Settings -> Community modules of your self-hosted n8n instance
 2. Select "Install Community node"
-3. Specify the name `@telepilotco/n8n-nodes-telepilot`, click checkbox that you understand the risks and click "Install"
+3. Specify the name `@unclescrooge/n8n-nodes-telepilot`, click checkbox that you understand the risks and click "Install"
 
 ![Install Telepilot as n8n Community Node](https://telepilot.co/documentation-images/install-community-node-1.png)
 
@@ -82,11 +82,11 @@ To use this package in your n8n project, follow these steps:
 
 To get started install the package in your `~/.n8n/nodes` directory:
 
-`npm install @telepilotco/n8n-nodes-telepilot`
+`npm install @unclescrooge/n8n-nodes-telepilot`
 
 For Docker-based deployments, add the following line before the font installation command in your [n8n Dockerfile](https://github.com/n8n-io/n8n/blob/master/docker/images/n8n/Dockerfile):
 
-`RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot`
+`RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @unclescrooge/n8n-nodes-telepilot`
 
 ## TelePilot setup
 

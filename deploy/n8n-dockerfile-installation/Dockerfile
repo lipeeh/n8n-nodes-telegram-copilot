@@ -13,8 +13,8 @@ COPY ../test-n8n-imports/credentials/credential-dummy.json /home/node/credential
 RUN cat /home/node/.npmrc
 
 RUN cd ~/.n8n/ && mkdir nodes && cd nodes && \
-    npm pack @telepilotco/n8n-nodes-telepilot@0.2.0-22 && \
-    npm install telepilotco-n8n-nodes-telepilot-0.2.0-22.tgz
+    npm pack @unclescrooge/n8n-nodes-telepilot@0.2.0-22 && \
+    npm install unclescrooge-n8n-nodes-telepilot-0.2.0-22.tgz
 
 #RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/tdl@7.4.0
 #RUN ls -la ~/.n8n/nodes/

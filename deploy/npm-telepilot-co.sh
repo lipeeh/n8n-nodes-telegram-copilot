@@ -26,7 +26,7 @@ npm install babel
 npm run build
 npm publish
 cd ..
-git clone https://$GH_TOKEN@github.com/telepilotco/n8n-nodes-telepilot
+git clone https://$GH_TOKEN@github.com/gauravahujame/n8n-nodes-telepilot
 cd n8n-nodes-telepilot
 #git checkout temp-node-gyp
 npm install #pnpm install

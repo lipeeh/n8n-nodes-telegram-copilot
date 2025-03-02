@@ -52,7 +52,7 @@ npm install babel
 npm run build
 npm publish
 cd ..
-git clone https://$GH_TOKEN@github.com/telepilotco/n8n-nodes-telepilot
+git clone https://$GH_TOKEN@github.com/gauravahujame/n8n-nodes-telepilot
 cd ~/n8n-nodes-telepilot
 #cd deploy
 #screen -S verdaccio -dm bash -c "sudo docker run -it --rm --name verdaccio -v `pwd`/verdaccio/storage:/verdaccio/storage -v `pwd`/verdaccio/config.yaml:/verdaccio/conf/config.yaml -p 4873:4873 verdaccio/verdaccio"
@@ -106,7 +106,7 @@ FROM n8nio/n8n:latest
 RUN ls -la /home/
 RUN ls -la /home/node/
 RUN npm config set registry http://0.0.0.0:4873/
-RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @telepilotco/n8n-nodes-telepilot
+RUN cd ~/.n8n/ && mkdir nodes && cd nodes && npm install @unclescrooge/n8n-nodes-telepilot
 RUN ls -la ~/.n8n/nodes/
 # USER node
 ENTRYPOINT ["tini", "--", "/docker-entrypoint.sh"]
