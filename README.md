@@ -140,6 +140,15 @@ DEBUG=tdl,tdl:client,telepilot-cred,telepilot-node,telepilot-trigger,telepilot-c
 
 For dockerized setup, make sure you add these env variables to your docker container or docker compose
 
+## Environment Variables
+
+You can configure the following environment variables:
+
+- `TELEPILOT_DATABASE_PATH`: Path to store TDLib database files (default: ~/.n8n/nodes/node_modules/@unclescrooge/n8n-nodes-telepilot/db)
+- `TELEPILOT_FILES_PATH`: Path to store downloaded files from Telegram (default: ~/.n8n/nodes/node_modules/@unclescrooge/n8n-nodes-telepilot/db)
+
+Setting these paths properly in Docker environments ensures persistent sessions even when containers are restarted.
+
 
 ## Usage
 

@@ -36,11 +36,12 @@ export class TelePilotApi implements ICredentialType {
 		},
 	];
 
+	// Simple test that doesn't require external verification
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'http://ls.telepilot.co:4413',
-			url: '?key=empty',
-			method: 'POST',
+			baseURL: '127.0.0.1',
+			url: '',
+			method: 'GET',
 		},
 	};
 }
